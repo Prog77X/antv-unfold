@@ -1,0 +1,44 @@
+# 源代码文件
+src/
+webpack.config.js
+package-lock.json
+
+# 开发文件
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# 测试文件
+test/
+tests/
+__tests__/
+*.test.js
+*.spec.js
+coverage/
+jest.config.js
+
+# 文档文件
+docs/
+*.md
+!README.md
+
+# 配置文件
+.gitignore
+.npmignore
+.eslintrc*
+.prettierrc*
+babel.config.js
+jest.config.js
+
+# 临时文件
+tmp/
+temp/
+.tmp/
+
+# 构建缓存
+.cache/
+node_modules/.cache/
+
+# GitHub Actions 工作流
+.github/
