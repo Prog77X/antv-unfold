@@ -11,6 +11,15 @@
 - 🎯 **TypeScript** - 完整的类型定义支持
 - 📦 **轻量级** - 基于 AntV G6，体积小巧
 
+## 在线示例
+
+🎮 **[在线演示](https://prog77x.github.io/antv-unfold/examples/basic.html)** - 体验完整功能
+
+- 点击节点展开子节点
+- 使用工具栏进行缩放和重置
+- 切换不同的颜色主题
+- 拖拽节点调整位置
+
 ## 安装
 
 ```bash
@@ -240,13 +249,13 @@ npm install
 ### 启动开发服务器
 
 ```bash
-npm start
+npm run dev
 ```
 
 ### 构建库
 
 ```bash
-npm run build:lib
+npm run build
 ```
 
 ### 运行测试
@@ -254,6 +263,12 @@ npm run build:lib
 ```bash
 npm test
 ```
+
+### 查看示例
+
+- **基础示例**: [basic.html](https://prog77x.github.io/antv-unfold/examples/basic.html)
+- **React 示例**: [react-example.jsx](https://github.com/Prog77X/antv-unfold/blob/main/examples/react-example.jsx)
+- **Vue 示例**: [vue-example.vue](https://github.com/Prog77X/antv-unfold/blob/main/examples/vue-example.vue)
 
 ## 许可证
 
