@@ -1,6 +1,6 @@
 {
   "name": "antv-unfold",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "一个基于AntV G6的可配置关系图可视化库，支持节点展开功能",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
