@@ -275,7 +275,22 @@ class GraphVisualizer {
       }
 
       // 查找被点击节点的数据
-      const clickedNode = this.data?.nodes?.find(node => node.id === target.id);
+      const getAllNodes = (nodeList) => {
+        const nodes = [];
+        
+        const traverse = (node) => {
+          nodes.push(node);
+          if (node?.children?.nodes) {
+            node.children.nodes.forEach(child => traverse(child));
+          }
+        };
+        
+        nodeList.forEach(node => traverse(node));
+        return nodes;
+      };
+      
+      const allNodes = getAllNodes(this.data.nodes);
+      const clickedNode = allNodes.find(node => node.id === target.id);
       if (!clickedNode || !clickedNode.children) {
         this.isClick = false;
         return;
